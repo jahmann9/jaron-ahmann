@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaron Ahmann — Senior QA Engineer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">JA</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <p class="hero-eyebrow">Senior Quality Assurance Engineer</p>
+      <h1 class="hero-name">Jaron<br /><span>Ahmann</span></h1>
+      <p class="hero-tagline">
+        Passionate about quality in a world where technology never stops evolving. I keep pace with what's new so the software people rely on stays solid.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Career</p>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="exp-timeline">
+
+        <div class="exp-company">
+          <div class="exp-company-header">
+            <div class="exp-company-info">
+              <h3 class="exp-company-name">Hudl</h3>
+              <span class="exp-company-location">Lincoln, NE</span>
+            </div>
+          </div>
+
+          <div class="exp-role">
+            <div class="exp-role-header">
+              <div>
+                <h4 class="exp-role-title">Senior Quality Assurance Engineer</h4>
+                <span class="exp-role-date">April 2025 – Present</span>
+              </div>
+              <span class="exp-badge exp-badge-current">Current</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Lead QA efforts for the Sustaining Engineering team, ensuring long-term reliability across a fleet of 10,000+ deployed cameras.</li>
+              <li>Designed, built, and maintain a Return Merchandise Authorization tool that improved hardware repair turnaround time by <strong>50%</strong>.</li>
+              <li>Deliver monthly quality reports to product leadership using Redash and Sumo Logic — insights identified top return reasons and drove solutions that reduced camera returns by <strong>25%</strong>.</li>
+              <li>Partner with third-party camera manufacturers to validate that manufacturing tools meet quality standards and integration requirements.</li>
+              <li>Maintain and enhance CI/CD pipelines using TeamCity, GitHub Actions, and AWS, enabling seamless bi-weekly production device updates.</li>
+            </ul>
+          </div>
+
+          <div class="exp-role">
+            <div class="exp-role-header">
+              <div>
+                <h4 class="exp-role-title">Quality Assurance Manager</h4>
+                <span class="exp-role-date">Jan 2020 – April 2025</span>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>Supervised a team of 7 QA engineers, driving cross-departmental QA process integration and quality consistency.</li>
+              <li>Led adoption of Detox as the mobile automation framework, cutting the Hudl Focus app release cycle from <strong>4 weeks to 2 weeks</strong>.</li>
+              <li>Collaborated with QA teammates to expand and scale the Detox end-to-end test framework.</li>
+              <li>Organized and coordinated testing efforts in Jira Xray, contributing to a <strong>41% reduction</strong> in open defects quarter-over-quarter.</li>
+            </ul>
+          </div>
+
+          <div class="exp-role">
+            <div class="exp-role-header">
+              <div>
+                <h4 class="exp-role-title">Quality Assurance Engineer</h4>
+                <span class="exp-role-date">May 2017 – Jan 2020</span>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>Led testing for the successful migration of <strong>4.5 million</strong> legacy media files to a new versioned infrastructure with zero user disruptions.</li>
+              <li>Automated 100+ REST/GraphQL API tests and 50+ UI tests using Selenium and Python, significantly improving test coverage and efficiency.</li>
+              <li>Built AWS Lambda scripts to aggregate and visualize automation results, reducing test flakiness by <strong>20%</strong>.</li>
+              <li>Designed and documented a quality control process for managing default program and feature privileges across cross-functional teams.</li>
+              <li>Awarded the <strong>Quail Award</strong> — given quarterly to the top QA in the company — for outstanding performance and impact.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Expertise</p>
+        <h2 class="section-title">Skills &amp; Tools</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/></svg>
+          </div>
+          <h3>Test Automation</h3>
+          <ul>
+            <li>Selenium</li>
+            <li>Detox (React Native)</li>
+            <li>Talend Cloud API Tester</li>
+            <li>Swagger / OpenAPI</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4l6 6m0 0l6-6M10 10v11M4 20h16"/></svg>
+          </div>
+          <h3>CI/CD &amp; DevOps</h3>
+          <ul>
+            <li>GitHub Actions</li>
+            <li>TeamCity</li>
+            <li>AWS</li>
+            <li>Bash / Shell Scripting</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Programming</h3>
+          <ul>
+            <li>Python</li>
+            <li>JavaScript / TypeScript</li>
+            <li>YAML</li>
+            <li>Bash / Shell</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3>Mobile &amp; Platform Testing</h3>
+          <ul>
+            <li>Android Studio</li>
+            <li>Xcode (iOS)</li>
+            <li>macOS &amp; Linux</li>
+            <li>Firebase</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2"/><path d="M9 12h6M9 16h4"/></svg>
+          </div>
+          <h3>Test Management</h3>
+          <ul>
+            <li>Jira</li>
+            <li>Jira Xray</li>
+            <li>TDD &amp; BDD</li>
+            <li>Agile / Scrum</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h18v18H3zM3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>Data &amp; Observability</h3>
+          <ul>
+            <li>SQL</li>
+            <li>Sumo Logic</li>
+            <li>Redash</li>
+            <li>pandas</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Portfolio</p>
+        <h2 class="section-title">Personal Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card featured">
+          <div class="project-meta">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">GitHub Actions</span>
+            <span class="project-tag">REST API</span>
+            <span class="project-tag">CI/CD</span>
+          </div>
+          <h3 class="project-title">Fantasy Football Automation Pipeline</h3>
+          <p class="project-desc">
+            Engineered an automated data pipeline that runs weekly on GitHub Actions, integrating with Sleeper's REST API to collect league win-loss records and point totals. The Python script transforms raw API responses into structured JSON and automatically commits and deploys the updated data to a public GitHub Pages site — demonstrating end-to-end automation, API integration, and CI/CD pipeline implementation outside of a work environment.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight">
+              <span class="highlight-label">Automated on a schedule</span>
+              <span class="highlight-value">Every Tuesday via cron</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-label">Data Source</span>
+              <span class="highlight-value">Sleeper REST API</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-label">Deployment</span>
+              <span class="highlight-value">GitHub Pages (auto-commit)</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://jahmann9.github.io/FantasyFootballWebsite/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Live Site</a>
+            <a href="https://github.com/jahmann9/FantasyFootballWebsite" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card featured">
+          <div class="project-meta">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">scikit-learn</span>
+            <span class="project-tag">pandas</span>
+            <span class="project-tag">Supabase</span>
+            <span class="project-tag">GitHub Pages</span>
+          </div>
+          <h3 class="project-title">NFL Against-the-Spread Predictor</h3>
+          <p class="project-desc">
+            Built a machine learning application that trains logistic regression models on 10 years of NFL schedule and betting line data to predict which teams will cover the spread and whether games go over or under. The app produces weekly ATS and O/U picks with confidence scores, generates evaluation charts, and deploys reports to a GitHub Pages site. Includes a Supabase-backed admin panel and live leaderboard for tracking friend pick results week over week.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight">
+              <span class="highlight-label">Model</span>
+              <span class="highlight-value">Logistic Regression (scikit-learn)</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-label">Training Data</span>
+              <span class="highlight-value">10 years of NFL spreads &amp; totals</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-label">Backend</span>
+              <span class="highlight-value">Supabase (picks &amp; leaderboard)</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-label">Deployment</span>
+              <span class="highlight-value">GitHub Pages via Actions</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://jahmann9.github.io/nfl-predictor/reports/summaries/season_report_2026.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Live Site</a>
+            <a href="https://github.com/jahmann9/nfl-predictor" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Background</p>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="edu-card">
+        <div class="edu-logo">
+          <span>N</span>
+        </div>
+        <div class="edu-body">
+          <h3>University of Nebraska – Lincoln</h3>
+          <p class="edu-degree">Bachelor of Science &mdash; Computer Science &amp; Mathematics</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="container contact-container">
+      <div class="section-header">
+        <p class="section-label">Let's Connect</p>
+        <h2 class="section-title">Get in Touch</h2>
+      </div>
+      <p class="contact-intro">Open to Senior QA, SDET, and QA Lead opportunities. Feel free to reach out directly.</p>
+      <div class="contact-links">
+        <a href="mailto:jaronahmann@gmail.com" class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>jaronahmann@gmail.com</span>
+        </a>
+        <a href="tel:4023266145" class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.08 6.08l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>(402) 326-6145</span>
+        </a>
+        <a href="https://linkedin.com/in/jaron-ahmann" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <span>linkedin.com/in/jaron-ahmann</span>
+        </a>
+        <a href="https://github.com/jahmann9" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          <span>github.com/jahmann9</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Jaron Ahmann.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
