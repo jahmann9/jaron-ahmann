@@ -48,6 +48,22 @@ ul {
   list-style: none;
 }
 
+/* visually hidden but readable by crawlers and screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+  left: -9999px;
+  top: auto;
+}
+
 /* ============================================================
    LAYOUT
    ============================================================ */
@@ -458,6 +474,31 @@ ul {
 /* ============================================================
    SKILLS
    ============================================================ */
+.skills-callout {
+  background: linear-gradient(135deg, rgba(224,48,48,0.1), rgba(224,48,48,0.04));
+  border: 1px solid rgba(224,48,48,0.28);
+  border-radius: var(--radius-lg);
+  padding: 20px 22px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skills-callout-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.skills-callout p {
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
